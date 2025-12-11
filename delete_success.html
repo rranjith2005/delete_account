@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Received | Stall Spot</title>
+    <style>
+        :root {
+            --text-dark: #333333;
+            --bg-color: #FAFAFA;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .message-box {
+            max-width: 800px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1 {
+            color: var(--text-dark);
+            font-size: 2.2rem;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        /* Simple fade-in animation for a professional touch */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="message-box">
+        <h1>Your account deletion request has been received. Our team will process it shortly.</h1>
+    </div>
+
+</body>
+</html>
